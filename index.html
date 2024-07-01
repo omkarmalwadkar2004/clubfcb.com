@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scroll Down/Up - Add/Remove Class</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0;
+        }
+
+        nav {
+            height: 50px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #9d5353;
+            transition: 1s;
+        }
+
+        nav.scrollNav {
+            height: 60px;
+            background-color: #9d5353 ;
+        }
+
+        img {
+            height: auto;
+            max-width: 100%;
+            
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .nav-content {
+            
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 200px;
+            list-style: none;
+            gap: 80px;
+            position: space-between;
+           
+            
+        }
+        .navbar{
+
+        }
+        img.logo {
+            height: 200px;
+            background: #363e67;
+            padding: 10px;
+            transition: 1s;
+            border-bottom-left-radius: 60%;
+            border-bottom-right-radius: 60%;
+        }
+        
+        nav.scrollNav img.logo {
+            height: 40px;
+            padding: 10px;
+            background: transparent;
+        }
+        
+        .op{
+            height: 35px;
+            background-color: #9d5353;
+            padding-top: 15px;
+            padding-left:10px ;
+            padding-right: 10px ;
+            border-radius: 7px;
+            color: white;
+        }
+    
+
+
+        li{
+            list-style: none;
+        background-color: #cb9857;
+                font-size: 20px;
+            transform: translate(50%);
+        }
+        .op:hover{
+            background-color: #595653;
+            cursor: pointer;
+            border-radius: 5px;
+
+        }
+        
+        
+        #img1:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        h1{
+            flex-wrap: wrap;
+            font-size: 80px;
+            padding-top: 20px;
+            transform: translate(13%);
+            color: #e4bf8e;
+        }
+        h3{
+            flex-wrap: wrap;
+            font-size: 40px;
+            transform: translate(10%);
+            color: #d9a741;
+            
+        }
+        
+
+ </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="nav-content">
+            <img id="img1" src="pngimg.com - fcb_logo_PNG22.png" class="logo" alt="">
+            
+            <li class="op" id="op1"> News</a></li>
+            <li class="op">Match</a></li>
+            <li class="op">Player</li>
+            <li class="op">Ticket</a></li>
+            <li class="op">History</li>
+        </div>
+        <h1>FC Barcelona</h1>
+        <h3>"Visca Barca Visca el Catalunhya"</h3>
+    </nav>
+    <div class="content">
+        <img src="wp4758908-messi-for-pc-wallpapers.jpg" alt="">
+        <img src="wallpaperflare.com_wallpaper (1).jpg" alt="">
+        <img src="wallpaperflare.com_wallpaper (2).jpg" alt="">
+        <img src="wallpaperflare.com_wallpaper.jpg" alt="">
+        <img src="HD wallpaper_ FC Barcelona Emblem, FC Barcelona wallpaper, Sports, Football.jpeg" alt="">
+</div>
+    </div>
+    <script>
+        window.onscroll = function() {
+            var nav = document.getElementById('navbar');
+            if (window.pageYOffset > 500) {
+                nav.classList.add("scrollNav");
+            } else {
+                nav.classList.remove("scrollNav");
+            }
+        }
+    </script>
+</body></html>

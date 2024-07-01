@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 100px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    transition: 1s;
+    background-color: red;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+.content{
+    text-align: center;
+}
+
+.nav-content {
+    padding: 0 10px;
+}
+
+img.logo {
+    height: 150px;
+    background-color: #cb9857;
+    padding: 20px;
+    transition: 1s;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+
+nav.scrollNav img.logo {
+    height: 40px;
+    padding: 10px;
+    background-color: transparent;
+
+}
